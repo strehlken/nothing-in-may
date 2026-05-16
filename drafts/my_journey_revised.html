@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my journey is like—</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 12c-9 0-12 8-12 14s5 10 10 10 8-4 8-8-3-6-6-6-4 2-4 4' fill='none' stroke='%231f1a14' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #1f1a14;
+  background: #f7f1e5;
+  background-image:
+    radial-gradient(at 20% 10%, rgba(181,117,26,0.04) 0px, transparent 50%),
+    radial-gradient(at 80% 90%, rgba(194,89,51,0.03) 0px, transparent 50%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 6rem 1.75rem 8rem;
+}
+
+@media (max-width: 600px) {
+  body { font-size: 18px; }
+  .page { padding: 4rem 1.25rem 5rem; }
+}
+
+/* Title */
+.title-block {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.5px solid #c9bfaf;
+}
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #5a5147;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(48px, 9vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+}
+.dedication {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: #5a5147;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Sections */
+section { margin-bottom: 5rem; }
+.section-number {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #5a5147;
+  margin-bottom: 0.75rem;
+}
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(34px, 5vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+p em { font-style: italic; }
+
+/* Figures */
+figure { margin: 2.5rem 0; }
+figure.full-bleed img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(31,26,20,0.08), 0 10px 30px rgba(31,26,20,0.06);
+}
+figure.crop {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure.crop img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(31,26,20,0.08), 0 10px 30px rgba(31,26,20,0.06);
+}
+figcaption {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #5a5147;
+  text-align: center;
+  margin-top: 0.9rem;
+  line-height: 1.45;
+}
+
+/* SVG diagrams */
+.diagram {
+  margin: 2.5rem 0;
+  padding: 1.25rem 0;
+}
+.diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Color legend chips */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.75rem;
+  justify-content: center;
+  margin: 1rem auto 0;
+  max-width: 640px;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #5a5147;
+}
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background: transparent;
+}
+
+/* Pull-out feeling */
+.feeling {
+  border-left: 2px solid #b5751a;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #3a342c;
+}
+.feeling p { margin-bottom: 0.5rem; }
+
+hr.divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c9bfaf, transparent);
+  margin: 0 auto 4rem;
+  max-width: 200px;
+}
+
+.coda {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: #5a5147;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 0.5px solid #c9bfaf;
+}
+.coda p { margin-bottom: 0.5rem; }
+
+/* Chapter opener — dramatic chapter intro that scrolls away */
+.chapter-opener {
+  text-align: center;
+  margin: 5rem 0 0;
+  padding-top: 1rem;
+}
+.chapter-opener .chapter-num-big {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.32em;
+  color: #b5751a;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.chapter-opener .chapter-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(54px, 9.5vw, 84px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  color: #1f1a14;
+  margin: 0 0 1.5rem;
+}
+.chapter-opener .chapter-ornament {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 14px;
+  opacity: 0.7;
+}
+.chapter-opener .chapter-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: #5a5147;
+  margin-top: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+/* Chapter bar — slim sticky label that persists through the chapter */
+.chapter-bar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  margin: 2.5rem -1.75rem 2.5rem;
+  padding: 0.85rem 1.75rem;
+  background: rgba(247, 241, 229, 0.82);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 0.5px solid rgba(201, 191, 175, 0.6);
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+}
+.chapter-bar .num {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: #b5751a;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.chapter-bar .name {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: #1f1a14;
+  line-height: 1;
+}
+.chapter-bar .sub {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #7d7670;
+  margin-left: auto;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .chapter-bar { margin: 2rem -1.25rem 2rem; padding: 0.7rem 1.25rem; gap: 0.6rem; }
+  .chapter-bar .name { font-size: 19px; }
+  .chapter-bar .sub { display: none; }
+  .chapter-opener { margin: 3.5rem 0 0; }
+}
+
+/* Chapter h2 inside opener overrides default section h2 spacing */
+.chapter-opener h2.chapter-title { margin-bottom: 1.5rem; }
+
+/* Tone down h3 spacing now that chapters are louder */
+section h3 {
+  color: #2c2620;
+  margin-top: 2.75rem;
+}
+section h3::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: #b5751a;
+  opacity: 0.45;
+  margin-bottom: 0.6rem;
+}
+</style>
+</head>
+<body>
+
+<main class="page">
+
+<header class="title-block">
+  <div class="eyebrow">A reading of a doodle</div>
+  <h1>my journey is like—</h1>
+  <p class="dedication">A drawing made in five to ten minutes while feeling unpleasant, and what I noticed in it afterward.</p>
+</header>
+
+<section>
+  <figure class="full-bleed">
+    <img src="../images/My%20journey%20is%20like-.jpeg" alt="The drawing — a single continuous line on a page, beginning with a tight spiral and winding through a thicket, a middle full of parallel curves, a long bass wiggle, and a tiny flourish at the end.">
+    <figcaption>the drawing</figcaption>
+  </figure>
+
+  <p>I drew this in 5 to 10 minutes.</p>
+
+  <p>When I drew it I was feeling unpleasant. I kept thinking about <em>sticking with things</em>. Because life is like that. We don't get to rewrite ourselves or our journeys. Every day we wake up, an innocent new person who is dealt the past as it is.</p>
+
+  <p>That's what this doodle was like. At every step I had to decide where to continue the line. I was stuck with where it had already gone. That was just done — it <em>was</em> at that moment. I had to make do with it.</p>
+</section>
+
+<hr class="divider">
+
+<section>
+  <div class="section-number">the shape of it</div>
+  <h2>spiral, thicket, middle, bass-wiggle, flourish + stop</h2>
+
+  <p>Looking at the drawing now, it falls into five phases. The line goes through each one in order. I didn't plan that.</p>
+
+  <div class="diagram"><svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five phases of the drawing as a schema">
+    <g transform="translate(80,110)">
+      <path d="M 0 0 m -3 0 a 3 3 0 1 1 6 0 a 6 6 0 1 0 -12 0 a 9 9 0 1 1 18 0 a 12 12 0 1 0 -24 0 a 15 15 0 1 1 30 0 a 18 18 0 1 0 -36 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+    <text x="80" y="180" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">spiral</text>
+
+    <g transform="translate(220,110)">
+      <path d="M -30 0 q 5 -15 10 0 q 5 15 10 -5 q 5 -10 10 5 q 5 12 10 -8 q 5 -8 10 5 q 5 8 10 -3" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+    <text x="220" y="180" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">thicket</text>
+
+    <g transform="translate(360,110)">
+      <path d="M -30 -10 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M -30 0 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M -30 10 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+    <text x="360" y="180" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">middle</text>
+
+    <g transform="translate(500,110)">
+      <path d="M -30 0 c 15 -15 25 15 60 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+    <text x="500" y="180" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">bass-wiggle</text>
+
+    <g transform="translate(620,110)">
+      <path d="M -15 5 q 3 -10 6 0 q 3 8 6 -5 q 3 -3 6 4" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
+      <circle cx="6" cy="6" r="2.5" fill="#1f1a14"/>
+    </g>
+    <text x="620" y="180" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">flourish + stop</text>
+
+    <line x1="110" y1="115" x2="195" y2="115" stroke="#c9bfaf" stroke-width="0.8" stroke-dasharray="2 4"/>
+    <line x1="250" y1="115" x2="325" y2="115" stroke="#c9bfaf" stroke-width="0.8" stroke-dasharray="2 4"/>
+    <line x1="395" y1="115" x2="470" y2="115" stroke="#c9bfaf" stroke-width="0.8" stroke-dasharray="2 4"/>
+    <line x1="535" y1="115" x2="595" y2="115" stroke="#c9bfaf" stroke-width="0.8" stroke-dasharray="2 4"/>
+  </svg></div>
+
+  <p>And here they are in the actual page, color-coded:</p>
+
+  <figure class="full-bleed">
+    <img src="../images/My%20journey%20is%20like-%20copy%202.jpeg" alt="The drawing rotated, with colored outlines marking each phase: blue around the small spiral at one corner, red around the high-frequency thicket near it, light green over the wide middle, purple around the long bass wiggle, and a tiny yellow circle around the final flourish.">
+    <figcaption>the five phases mapped onto the page</figcaption>
+  </figure>
+
+  <div class="legend">
+    <span><span class="swatch" style="color:#2a6cd8"></span>spiral</span>
+    <span><span class="swatch" style="color:#e0432a"></span>thicket</span>
+    <span><span class="swatch" style="color:#7bc04a"></span>middle</span>
+    <span><span class="swatch" style="color:#a653d9"></span>bass-wiggle</span>
+    <span><span class="swatch" style="color:#d9a82a"></span>flourish + stop</span>
+  </div>
+</section>
+
+<section>
+  <div class="chapter-opener">
+    <div class="chapter-num-big">chapter i</div>
+    <h2 class="chapter-title">the beginning</h2>
+    <svg class="chapter-ornament" viewBox="0 0 120 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M 4 7 Q 14 0, 24 7 T 44 7 T 64 7 T 84 7 T 104 7 T 116 7" fill="none" stroke="#b5751a" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    <div class="chapter-subtitle">the spiral</div>
+  </div>
+  <div class="chapter-bar">
+    <span class="num">I</span>
+    <span class="name">the beginning</span>
+    <span class="sub">the spiral</span>
+  </div>
+
+  <p>The beginning is an outward spiral.</p>
+
+  <p>It's unsustainable. It would go off the page. Or I'd have to increase the spiral distance hugely on one side, making it really lopsided. The timing of escape is unpredictable.</p>
+</section>
+
+<section>
+  <div class="chapter-opener">
+    <div class="chapter-num-big">chapter ii</div>
+    <h2 class="chapter-title">adolescence</h2>
+    <svg class="chapter-ornament" viewBox="0 0 120 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M 4 7 Q 14 0, 24 7 T 44 7 T 64 7 T 84 7 T 104 7 T 116 7" fill="none" stroke="#b5751a" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    <div class="chapter-subtitle">the thicket</div>
+  </div>
+  <div class="chapter-bar">
+    <span class="num">II</span>
+    <span class="name">adolescence</span>
+    <span class="sub">the thicket</span>
+  </div>
+
+  <p>After the spiral, there's a little intermediate period. Almost high-frequency. An intricate <em>finding yourself</em>. In the schema this is the <em>thicket</em>.</p>
+
+  <p>In this zone you think you're going to have way more time than you do. (In the form of patience, I guess.)</p>
+
+  <p>The trajectory here is all over the place. It hasn't settled into a clear pattern of sympathy or opposition. Two of my three wiggle-smoothing events happen here (more on those below).</p>
+
+  <p>I'm calling this zone the adolescence.</p>
+</section>
+
+<section>
+  <div class="chapter-opener">
+    <div class="chapter-num-big">chapter iii</div>
+    <h2 class="chapter-title">the middle</h2>
+    <svg class="chapter-ornament" viewBox="0 0 120 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M 4 7 Q 14 0, 24 7 T 44 7 T 64 7 T 84 7 T 104 7 T 116 7" fill="none" stroke="#b5751a" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    <div class="chapter-subtitle">doubling back, in two ways</div>
+  </div>
+  <div class="chapter-bar">
+    <span class="num">III</span>
+    <span class="name">the middle</span>
+    <span class="sub">sympathy, opposition, smoothing</span>
+  </div>
+
+  <p>The middle is so complicated. It's hard to look at it and say anything that feels meaningful. I could say it looks like a face — but that's like seeing shapes in clouds. That feels like imposing a reading versus listening to what's actually in the drawing — understanding the complexity and the wiggles and fingers.</p>
+
+  <p>What's actually in the middle is a few moves I was making.</p>
+
+  <h3>doubling back</h3>
+
+  <p>Near the edges of the page, or just at random, I'd double back. Once doubled back, I'd settle into a routine of re-tracing the contours of what came before — at a distance, in a new curve.</p>
+
+  <p>I did this in two different ways.</p>
+
+  <h3>sympathy</h3>
+
+  <p>The first way: following the wave-shape. Tracing a similar shape. The gap between the old line and the new one stays roughly constant.</p>
+
+  <h3>opposition</h3>
+
+  <p>The second way: diametrically opposed to the prior wave-shape. Riding in perfect opposition to it. When the prior curve is closer to me, I veer closer. When it's veering away, I too am veering away. So the gap between us pinches and balloons.</p>
+
+  <div class="diagram"><svg viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sympathy versus opposition diagram">
+    <text x="60" y="38" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#1f1a14">sympathy</text>
+    <text x="60" y="60" font-family="EB Garamond, serif" font-size="14" fill="#5a5147">the gap stays constant</text>
+
+    <path d="M 60 130 C 98 110 92 110 130 130 C 168 150 162 150 200 130 C 238 110 232 110 270 130 C 308 150 302 150 340 130 C 378 110 372 110 410 130 C 448 150 442 150 480 130 C 518 110 512 110 550 130 C 588 150 582 150 620 130" fill="none" stroke="#7d7670" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 60 190 C 98 170 92 170 130 190 C 168 210 162 210 200 190 C 238 170 232 170 270 190 C 308 210 302 210 340 190 C 378 170 372 170 410 190 C 448 210 442 210 480 190 C 518 170 512 170 550 190 C 588 210 582 210 620 190" fill="none" stroke="#b5751a" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="58" y="134" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#7d7670">prior</text>
+    <text x="58" y="194" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#b5751a">new</text>
+
+    <text x="60" y="278" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#1f1a14">opposition</text>
+    <text x="60" y="300" font-family="EB Garamond, serif" font-size="14" fill="#5a5147">the gap pinches and balloons</text>
+
+    <path d="M 60 350 C 98 320 92 320 130 350 C 168 380 162 380 200 350 C 238 320 232 320 270 350 C 308 380 302 380 340 350 C 378 320 372 320 410 350 C 448 380 442 380 480 350 C 518 320 512 320 550 350 C 588 380 582 380 620 350" fill="none" stroke="#7d7670" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 60 430 C 98 460 92 460 130 430 C 168 400 162 400 200 430 C 238 460 232 460 270 430 C 308 400 302 400 340 430 C 378 460 372 460 410 430 C 448 400 442 400 480 430 C 518 460 512 460 550 430 C 588 400 582 400 620 430" fill="none" stroke="#b5751a" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="58" y="354" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#7d7670">prior</text>
+    <text x="58" y="434" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#b5751a">new</text>
+  </svg></div>
+
+  <p>As I say that, it reminds me sometimes how I am with prior versions of myself — and prior versions of life handed to me through stories or relationships.</p>
+
+  <h3>smooth echo of wiggles</h3>
+
+  <p>Sometimes my new path is a <em>smooth echo</em> of what came before. There might be fine-scale features I ignore when I make my sympathy curve. The sympathy curve may be sympathetic only to the overall contour, or envelope, or local convex hull. Not trying to fit all the high-frequency structure — just the beats.</p>
+
+  <div class="diagram"><svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Smooth echo of wiggles">
+<text x="60" y="38" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#1f1a14">smooth echo of wiggles</text>
+<text x="60" y="60" font-family="EB Garamond, serif" font-size="14" fill="#5a5147">an editorial choice about resolution</text>
+
+<path d="M 60 120.0 L 62 123.5 L 64 126.7 L 66 129.2 L 68 130.9 L 70 131.6 L 72 131.4 L 74 130.5 L 76 129.0 L 78 127.4 L 80 125.9 L 82 124.8 L 84 124.6 L 86 125.1 L 88 126.7 L 90 129.0 L 92 131.9 L 94 135.2 L 96 138.4 L 98 141.3 L 100 143.5 L 102 144.8 L 104 145.1 L 106 144.5 L 108 143.1 L 110 141.1 L 112 138.9 L 114 136.9 L 116 135.3 L 118 134.5 L 120 134.5 L 122 135.4 L 124 137.1 L 126 139.4 L 128 142.0 L 130 144.5 L 132 146.7 L 134 148.2 L 136 148.8 L 138 148.4 L 140 147.0 L 142 144.9 L 144 142.2 L 146 139.3 L 148 136.5 L 150 134.2 L 152 132.6 L 154 131.9 L 156 132.1 L 158 133.1 L 160 134.7 L 162 136.6 L 164 138.4 L 166 139.9 L 168 140.7 L 170 140.7 L 172 139.7 L 174 137.7 L 176 135.0 L 178 131.7 L 180 128.3 L 182 125.0 L 184 122.1 L 186 120.1 L 188 118.9 L 190 118.6 L 192 119.2 L 194 120.4 L 196 122.0 L 198 123.5 L 200 124.7 L 202 125.3 L 204 125.0 L 206 123.8 L 208 121.7 L 210 118.8 L 212 115.4 L 214 111.9 L 216 108.6 L 218 105.8 L 220 103.7 L 222 102.6 L 224 102.5 L 226 103.2 L 228 104.5 L 230 106.3 L 232 108.1 L 234 109.5 L 236 110.4 L 238 110.4 L 240 109.5 L 242 107.8 L 244 105.3 L 246 102.4 L 248 99.3 L 250 96.5 L 252 94.2 L 254 92.7 L 256 92.1 L 258 92.5 L 260 93.8 L 262 95.8 L 264 98.2 L 266 100.6 L 268 102.7 L 270 104.3 L 272 105.0 L 274 104.8 L 276 103.8 L 278 102.0 L 280 99.8 L 282 97.5 L 284 95.4 L 286 93.8 L 288 93.0 L 290 93.2 L 292 94.4 L 294 96.4 L 296 99.1 L 298 102.2 L 300 105.3 L 302 108.1 L 304 110.4 L 306 111.8 L 308 112.3 L 310 111.9 L 312 110.8 L 314 109.2 L 316 107.4 L 318 105.9 L 320 104.9 L 322 104.6 L 324 105.3 L 326 106.9 L 328 109.4 L 330 112.6 L 332 116.1 L 334 119.6 L 336 122.7 L 338 125.3 L 340 127.0 L 342 127.7 L 344 127.6 L 346 126.6 L 348 125.2 L 350 123.6 L 352 122.2 L 354 121.2 L 356 121.0 L 358 121.7 L 360 123.3 L 362 125.7 L 364 128.8 L 366 132.1 L 368 135.5 L 370 138.4 L 372 140.7 L 374 142.2 L 376 142.6 L 378 142.2 L 380 140.9 L 382 139.1 L 384 137.1 L 386 135.2 L 388 133.8 L 390 133.1 L 392 133.3 L 394 134.3 L 396 136.2 L 398 138.7 L 400 141.4 L 402 144.2 L 404 146.5 L 406 148.2 L 408 148.9 L 410 148.7 L 412 147.6 L 414 145.6 L 416 143.1 L 418 140.4 L 420 137.8 L 422 135.6 L 424 134.2 L 426 133.6 L 428 134.0 L 430 135.1 L 432 136.8 L 434 138.9 L 436 140.9 L 438 142.5 L 440 143.5 L 442 143.5 L 444 142.6 L 446 140.8 L 448 138.2 L 450 135.0 L 452 131.6 L 454 128.4 L 456 125.7 L 458 123.7 L 460 122.6 L 462 122.4 L 464 123.0 L 466 124.3 L 468 125.9 L 470 127.4 L 472 128.6 L 474 129.2 L 476 128.9 L 478 127.7 L 480 125.6 L 482 122.7 L 484 119.3 L 486 115.8 L 488 112.4 L 490 109.5 L 492 107.4 L 494 106.2 L 496 106.0 L 498 106.6 L 500 107.9 L 502 109.6 L 504 111.2 L 506 112.6 L 508 113.3 L 510 113.3 L 512 112.3 L 514 110.4 L 516 107.8 L 518 104.7 L 520 101.5 L 522 98.5 L 524 96.1 L 526 94.4 L 528 93.7 L 530 93.9 L 532 95.1 L 534 96.9 L 536 99.1 L 538 101.3 L 540 103.3 L 542 104.6 L 544 105.2 L 546 104.8 L 548 103.6 L 550 101.7 L 552 99.3 L 554 96.8 L 556 94.5 L 558 92.8 L 560 91.8 L 562 91.8 L 564 92.8 L 566 94.7 L 568 97.2 L 570 100.2 L 572 103.2 L 574 105.8 L 576 107.9 L 578 109.2 L 580 109.5 L 582 109.0 L 584 107.8 L 586 106.1 L 588 104.2 L 590 102.6 L 592 101.5 L 594 101.1 L 596 101.7 L 598 103.3 L 600 105.7 L 602 108.8 L 604 112.3 L 606 115.7 L 608 118.9 L 610 121.4 L 612 123.0 L 614 123.8 L 616 123.6 L 618 122.7 L 620 121.3" fill="none" stroke="#7d7670" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 60 190.0 L 62 191.0 L 64 192.0 L 66 193.0 L 68 193.9 L 70 194.9 L 72 195.9 L 74 196.8 L 76 197.7 L 78 198.6 L 80 199.5 L 82 200.4 L 84 201.3 L 86 202.1 L 88 202.9 L 90 203.7 L 92 204.5 L 94 205.2 L 96 205.9 L 98 206.6 L 100 207.2 L 102 207.8 L 104 208.4 L 106 208.9 L 108 209.4 L 110 209.8 L 112 210.2 L 114 210.6 L 116 210.9 L 118 211.2 L 120 211.4 L 122 211.6 L 124 211.8 L 126 211.9 L 128 212.0 L 130 212.0 L 132 212.0 L 134 211.9 L 136 211.8 L 138 211.6 L 140 211.4 L 142 211.2 L 144 210.9 L 146 210.6 L 148 210.2 L 150 209.8 L 152 209.4 L 154 208.9 L 156 208.4 L 158 207.8 L 160 207.2 L 162 206.6 L 164 205.9 L 166 205.2 L 168 204.5 L 170 203.7 L 172 202.9 L 174 202.1 L 176 201.3 L 178 200.4 L 180 199.5 L 182 198.6 L 184 197.7 L 186 196.8 L 188 195.9 L 190 194.9 L 192 193.9 L 194 193.0 L 196 192.0 L 198 191.0 L 200 190.0 L 202 189.0 L 204 188.0 L 206 187.0 L 208 186.1 L 210 185.1 L 212 184.1 L 214 183.2 L 216 182.3 L 218 181.4 L 220 180.5 L 222 179.6 L 224 178.7 L 226 177.9 L 228 177.1 L 230 176.3 L 232 175.5 L 234 174.8 L 236 174.1 L 238 173.4 L 240 172.8 L 242 172.2 L 244 171.6 L 246 171.1 L 248 170.6 L 250 170.2 L 252 169.8 L 254 169.4 L 256 169.1 L 258 168.8 L 260 168.6 L 262 168.4 L 264 168.2 L 266 168.1 L 268 168.0 L 270 168.0 L 272 168.0 L 274 168.1 L 276 168.2 L 278 168.4 L 280 168.6 L 282 168.8 L 284 169.1 L 286 169.4 L 288 169.8 L 290 170.2 L 292 170.6 L 294 171.1 L 296 171.6 L 298 172.2 L 300 172.8 L 302 173.4 L 304 174.1 L 306 174.8 L 308 175.5 L 310 176.3 L 312 177.1 L 314 177.9 L 316 178.7 L 318 179.6 L 320 180.5 L 322 181.4 L 324 182.3 L 326 183.2 L 328 184.1 L 330 185.1 L 332 186.1 L 334 187.0 L 336 188.0 L 338 189.0 L 340 190.0 L 342 191.0 L 344 192.0 L 346 193.0 L 348 193.9 L 350 194.9 L 352 195.9 L 354 196.8 L 356 197.7 L 358 198.6 L 360 199.5 L 362 200.4 L 364 201.3 L 366 202.1 L 368 202.9 L 370 203.7 L 372 204.5 L 374 205.2 L 376 205.9 L 378 206.6 L 380 207.2 L 382 207.8 L 384 208.4 L 386 208.9 L 388 209.4 L 390 209.8 L 392 210.2 L 394 210.6 L 396 210.9 L 398 211.2 L 400 211.4 L 402 211.6 L 404 211.8 L 406 211.9 L 408 212.0 L 410 212.0 L 412 212.0 L 414 211.9 L 416 211.8 L 418 211.6 L 420 211.4 L 422 211.2 L 424 210.9 L 426 210.6 L 428 210.2 L 430 209.8 L 432 209.4 L 434 208.9 L 436 208.4 L 438 207.8 L 440 207.2 L 442 206.6 L 444 205.9 L 446 205.2 L 448 204.5 L 450 203.7 L 452 202.9 L 454 202.1 L 456 201.3 L 458 200.4 L 460 199.5 L 462 198.6 L 464 197.7 L 466 196.8 L 468 195.9 L 470 194.9 L 472 193.9 L 474 193.0 L 476 192.0 L 478 191.0 L 480 190.0 L 482 189.0 L 484 188.0 L 486 187.0 L 488 186.1 L 490 185.1 L 492 184.1 L 494 183.2 L 496 182.3 L 498 181.4 L 500 180.5 L 502 179.6 L 504 178.7 L 506 177.9 L 508 177.1 L 510 176.3 L 512 175.5 L 514 174.8 L 516 174.1 L 518 173.4 L 520 172.8 L 522 172.2 L 524 171.6 L 526 171.1 L 528 170.6 L 530 170.2 L 532 169.8 L 534 169.4 L 536 169.1 L 538 168.8 L 540 168.6 L 542 168.4 L 544 168.2 L 546 168.1 L 548 168.0 L 550 168.0 L 552 168.0 L 554 168.1 L 556 168.2 L 558 168.4 L 560 168.6 L 562 168.8 L 564 169.1 L 566 169.4 L 568 169.8 L 570 170.2 L 572 170.6 L 574 171.1 L 576 171.6 L 578 172.2 L 580 172.8 L 582 173.4 L 584 174.1 L 586 174.8 L 588 175.5 L 590 176.3 L 592 177.1 L 594 177.9 L 596 178.7 L 598 179.6 L 600 180.5 L 602 181.4 L 604 182.3 L 606 183.2 L 608 184.1 L 610 185.1 L 612 186.1 L 614 187.0 L 616 188.0 L 618 189.0 L 620 190.0" fill="none" stroke="#b5751a" stroke-width="2" stroke-linecap="round"/>
+
+<text x="58" y="124" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#7d7670">prior</text>
+<text x="58" y="194" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#b5751a">new</text>
+</svg></div>
+
+  <p>I see this happening in three places in my drawing. Maybe four — one of them could also be considered just a new finger or protrusion, so it's a bit ambiguous.</p>
+
+  <figure class="full-bleed">
+    <img src="../images/My%20journey%20is%20like-%20copy.jpeg" alt="The drawing with three colored annotations. Three red circles in the upper left mark places where a new curve smoothly echoes a wigglier prior curve. An orange ellipse in the middle marks a single finger that gets smoothed over by a later line. A light green outline at the top left marks a tangled region where the order of operations is unrecoverable.">
+    <figcaption>the three red circles in the upper left — three places where a smoother new curve sympathizes with a wigglier prior one</figcaption>
+  </figure>
+
+  <h3>smooth echo of fingers</h3>
+
+  <p>Fingers are what happens when you go take a winding route and double back, your u-turn making the tip of a finger. Smoothing fingers might be different from smoothing wiggles. It's when a later path comes near a bunch of finger tips but just wiggles a bit to reflect the tips and loses the full shape of the fingers. A finger isn't fine-scale texture like the wiggles — it's an entire excursion the line made and came back from.</p>
+
+  <p>I marked two areas of finger-smoothing in orange.</p>
+
+  <figure class="full-bleed">
+    <img src="../images/My%20journey%20is%20like-%20copy.jpeg" alt="Same annotated drawing. The orange ellipse in the middle right marks a finger-smoothing event — a later line smooths past a substantial excursion in an earlier line.">
+    <figcaption>the orange circles — later lines smooth past a substantial detour</figcaption>
+  </figure>
+
+  <h3>vacuum filling</h3>
+
+  <p>There's a different phenomenon that looks similar to smooth echo but isn't. The smooth echo is kind of like a reduction in complexity as you go along the path. But sometimes more complexity shows up later, filling a space left empty by earlier journeys.</p>
+
+  <p>This seems to be tied to the line <em>doubling back</em> too early from the edge of the page, then me deciding to fill the resulting space later, energetically, with finger-like excursions.</p>
+
+  <p>This happened in an area of my drawing that is so tangled that it's tough to parse what was drawn first versus what was added later.</p>
+
+  <p>This happens sometimes in life, especially the tangling.</p>
+
+  <figure class="full-bleed">
+    <img src="../images/My%20journey%20is%20like-%20copy.jpeg" alt="Same annotated drawing. A light green outline at the top left marks an irreducibly tangled region — a knot whose order of operations cannot be reconstructed.">
+    <figcaption>the light green outline at the bottom left — a knot whose order of operations would be a maze to uncover</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="chapter-opener">
+    <div class="chapter-num-big">chapter iv</div>
+    <h2 class="chapter-title">the end</h2>
+    <svg class="chapter-ornament" viewBox="0 0 120 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M 4 7 Q 14 0, 24 7 T 44 7 T 64 7 T 84 7 T 104 7 T 116 7" fill="none" stroke="#b5751a" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    <div class="chapter-subtitle">bass wiggle, flourish, stop</div>
+  </div>
+  <div class="chapter-bar">
+    <span class="num">IV</span>
+    <span class="name">the end</span>
+    <span class="sub">bass wiggle &middot; flourish &middot; stop</span>
+  </div>
+
+  <h3>graceful giving-up</h3>
+
+  <p>The big squiggles toward the end are an attempt to give up — gracefully.</p>
+
+  <p>The grace is the presence of a frequency at all — versus just being a beeline for the end. The smooth wiggles themselves, even if it's just a bass tone.</p>
+
+  <p>I was tired of striving.</p>
+
+  <h3>one last flourish</h3>
+
+  <p>Then at the very end I had one last flourish of high-frequency notes. A flash of ambition.</p>
+
+  <p>But I had committed. I was at the end of the page. And the precision permitted by the instrument — the pen — was insufficient to continue any further. I couldn't make recursive, ever-higher-frequency wiggles.</p>
+
+  <div class="feeling">
+    <p>I felt that as a statement about how life ends with this kind of dramatic smoothing.</p>
+  </div>
+</section>
+
+<div class="coda">
+  <p>The drawing took five to ten minutes.</p>
+  <p>It was made because I was feeling unpleasant.</p>
+  <p>It wasn't planned, and it wasn't titled until afterward.</p>
+  <p>And it turned out to be readable.</p>
+</div>
+
+</main>
+
+</body>
+</html>
