@@ -3,307 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>my journey is like—</title>
+<title>My journey is like...</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 12c-9 0-12 8-12 14s5 10 10 10 8-4 8-8-3-6-6-6-4 2-4 4' fill='none' stroke='%231f1a14' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 19px;
-  line-height: 1.7;
-  color: #1f1a14;
-  background: #f7f1e5;
-  background-image:
-    radial-gradient(at 20% 10%, rgba(181,117,26,0.04) 0px, transparent 50%),
-    radial-gradient(at 80% 90%, rgba(194,89,51,0.03) 0px, transparent 50%);
-  background-attachment: fixed;
+  font-family: 'Brandon Grotesque', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #232324;
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 .page {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 6rem 1.75rem 8rem;
+  padding: 4rem 1.5rem 6rem;
 }
-
 @media (max-width: 600px) {
-  body { font-size: 18px; }
-  .page { padding: 4rem 1.25rem 5rem; }
+  .page { padding: 2.5rem 1.25rem 4rem; }
 }
 
-/* Title */
 .title-block {
   text-align: center;
-  margin-bottom: 4rem;
-  padding-bottom: 3rem;
-  border-bottom: 0.5px solid #c9bfaf;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e8;
 }
 .eyebrow {
-  font-size: 13px;
-  letter-spacing: 0.18em;
+  font-size: 11px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #5a5147;
-  margin-bottom: 2rem;
-}
-h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: clamp(48px, 9vw, 76px);
-  line-height: 1.05;
-  letter-spacing: -0.01em;
-  margin-bottom: 1.5rem;
-}
-.dedication {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 19px;
-  color: #5a5147;
-  max-width: 480px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-/* Sections */
-section { margin-bottom: 5rem; }
-.section-number {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: #5a5147;
-  margin-bottom: 0.75rem;
-}
-h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: clamp(34px, 5vw, 44px);
-  line-height: 1.1;
-  letter-spacing: -0.005em;
-  margin-bottom: 2rem;
-}
-h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 26px;
-  line-height: 1.2;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-p {
+  color: #8a8a92;
+  font-weight: 600;
   margin-bottom: 1.25rem;
 }
+h1 {
+  font-family: 'Brandon Grotesque', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #232324;
+  margin-bottom: 1rem;
+}
+.dedication {
+  font-size: 0.95rem;
+  color: #50505a;
+  max-width: 460px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+section { margin-bottom: 3rem; }
+h2 {
+  font-family: 'Brandon Grotesque', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #232324;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-family: 'Brandon Grotesque', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #232324;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p { margin-bottom: 1rem; color: #232324; }
 p em { font-style: italic; }
 
-/* Figures */
-figure { margin: 2.5rem 0; }
-figure.full-bleed img {
-  width: 100%;
-  display: block;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(31,26,20,0.08), 0 10px 30px rgba(31,26,20,0.06);
-}
-figure.crop {
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-figure.crop img {
-  width: 100%;
-  display: block;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(31,26,20,0.08), 0 10px 30px rgba(31,26,20,0.06);
-}
+figure { margin: 1.5rem 0; }
+figure img { width: 100%; display: block; }
+figure.crop { max-width: 480px; margin-left: auto; margin-right: auto; }
 figcaption {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 15px;
-  color: #5a5147;
+  font-size: 0.85rem;
+  color: #50505a;
   text-align: center;
-  margin-top: 0.9rem;
-  line-height: 1.45;
+  margin-top: 0.5rem;
+  line-height: 1.4;
 }
 
-/* SVG diagrams */
-.diagram {
-  margin: 2.5rem 0;
-  padding: 1.25rem 0;
-}
-.diagram svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+.diagram { margin: 1.5rem 0; }
+.diagram svg { width: 100%; height: auto; display: block; }
 
-/* Color legend chips */
 .legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem 1.75rem;
+  gap: 0.75rem 1.5rem;
   justify-content: center;
-  margin: 1rem auto 0;
-  max-width: 640px;
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 15px;
-  color: #5a5147;
+  margin: 0.5rem auto 1rem;
+  font-size: 0.85rem;
+  color: #50505a;
 }
-.legend span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
+.legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
 .swatch {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 12px; height: 12px;
   border-radius: 50%;
   border: 2px solid currentColor;
   background: transparent;
 }
 
-/* Pull-out feeling */
 .feeling {
-  border-left: 2px solid #b5751a;
-  padding: 0.25rem 0 0.25rem 1.25rem;
-  margin: 2rem 0;
+  border-left: 2px solid #c0c0c8;
+  padding: 0.1rem 0 0.1rem 1rem;
+  margin: 1.5rem 0;
   font-style: italic;
-  color: #3a342c;
+  color: #50505a;
 }
-.feeling p { margin-bottom: 0.5rem; }
+.feeling p { margin-bottom: 0.25rem; }
 
-hr.divider {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #c9bfaf, transparent);
-  margin: 0 auto 4rem;
-  max-width: 200px;
-}
-
-.coda {
-  text-align: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 22px;
-  color: #5a5147;
-  margin-top: 5rem;
-  padding-top: 3rem;
-  border-top: 0.5px solid #c9bfaf;
-}
-.coda p { margin-bottom: 0.5rem; }
-
-/* Chapter opener — dramatic chapter intro that scrolls away */
 .chapter-opener {
   text-align: center;
-  margin: 5rem 0 0;
-  padding-top: 1rem;
+  margin: 3rem 0 0;
+  padding-top: 0.5rem;
 }
 .chapter-opener .chapter-num-big {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 14px;
-  letter-spacing: 0.32em;
-  color: #b5751a;
+  font-size: 11px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  color: #8a8a92;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 .chapter-opener .chapter-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: clamp(54px, 9.5vw, 84px);
-  line-height: 1.02;
-  letter-spacing: -0.01em;
-  color: #1f1a14;
-  margin: 0 0 1.5rem;
+  font-family: 'Brandon Grotesque', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #232324;
+  margin: 0 0 0.5rem;
 }
 .chapter-opener .chapter-ornament {
   display: block;
-  margin: 1rem auto 0;
-  width: 100px;
-  height: 50px;
-  opacity: 0.75;
+  margin: 0.75rem auto 0.25rem;
+  width: 80px;
+  height: 40px;
+  opacity: 0.55;
 }
 .chapter-opener .chapter-subtitle {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 19px;
-  color: #5a5147;
-  margin-top: 1.1rem;
-  letter-spacing: 0.02em;
+  font-size: 0.8rem;
+  color: #50505a;
+  margin-top: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-/* Chapter bar — slim sticky label that persists through the chapter */
 .chapter-bar {
   position: sticky;
   top: 0;
   z-index: 30;
-  margin: 2.5rem -1.75rem 2.5rem;
-  padding: 0.85rem 1.75rem;
-  background: rgba(247, 241, 229, 0.82);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  backdrop-filter: blur(14px) saturate(140%);
-  border-bottom: 0.5px solid rgba(201, 191, 175, 0.6);
+  margin: 1.5rem -1.5rem 1.5rem;
+  padding: 0.6rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e5e8;
   display: flex;
   align-items: baseline;
-  gap: 0.9rem;
-}
-.chapter-bar .num {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  color: #b5751a;
+  gap: 0.75rem;
+  font-size: 11px;
   text-transform: uppercase;
-  white-space: nowrap;
+  letter-spacing: 0.14em;
+  font-weight: 600;
 }
-.chapter-bar .name {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 22px;
-  color: #1f1a14;
-  line-height: 1;
-}
-.chapter-bar .sub {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #7d7670;
-  margin-left: auto;
-  white-space: nowrap;
-}
+.chapter-bar .num   { color: #8a8a92; white-space: nowrap; }
+.chapter-bar .name  { color: #232324; }
+.chapter-bar .sub   { color: #8a8a92; margin-left: auto; white-space: nowrap; }
 @media (max-width: 600px) {
-  .chapter-bar { margin: 2rem -1.25rem 2rem; padding: 0.7rem 1.25rem; gap: 0.6rem; }
-  .chapter-bar .name { font-size: 19px; }
+  .chapter-bar { margin: 1rem -1.25rem 1rem; padding: 0.5rem 1.25rem; gap: 0.6rem; }
   .chapter-bar .sub { display: none; }
-  .chapter-opener { margin: 3.5rem 0 0; }
 }
 
-/* Chapter h2 inside opener overrides default section h2 spacing */
-.chapter-opener h2.chapter-title { margin-bottom: 1.5rem; }
-
-/* Tone down h3 spacing now that chapters are louder */
-section h3 {
-  color: #2c2620;
-  margin-top: 2.75rem;
-}
-section h3::before {
-  content: "";
-  display: block;
-  width: 28px;
+hr.divider {
+  border: 0;
   height: 1px;
-  background: #b5751a;
-  opacity: 0.45;
-  margin-bottom: 0.6rem;
+  background: #e5e5e8;
+  margin: 2rem auto;
+  max-width: 120px;
 }
+
+.coda {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #50505a;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e8;
+}
+.coda p { margin-bottom: 0.25rem; }
 </style>
 </head>
 <body>
@@ -311,20 +215,17 @@ section h3::before {
 <main class="page">
 
 <header class="title-block">
-  <div class="eyebrow">A reading of a doodle</div>
-  <h1>my journey is like—</h1>
-  <p class="dedication">A drawing made in five to ten minutes while feeling unpleasant, and what I noticed in it afterward.</p>
+  <h1>My journey is like...</h1>
+  <p class="dedication">Overanalyzing a drawing made in five to ten minutes.</p>
 </header>
 
 <section>
   <figure class="full-bleed">
     <img src="images/My%20journey%20is%20like-.jpeg" alt="The drawing — a single continuous line on a page, beginning with a tight spiral and winding through a thicket, a middle full of parallel curves, a long bass wiggle, and a tiny flourish at the end.">
-    <figcaption>the drawing</figcaption>
+    <figcaption>The drawing</figcaption>
   </figure>
 
-  <p>I drew this in 5 to 10 minutes.</p>
-
-  <p>When I drew it I was feeling unpleasant. I kept thinking about <em>sticking with things</em>. Because life is like that. We don’t get to rewrite ourselves or our journeys. Every day we wake up, an innocent new person who is dealt the past as it is.</p>
+  <p>I drew this in 5 to 10 minutes when I was feeling unpleasant. I kept thinking about <em>sticking with things</em>. Because life is like that. We don’t get to rewrite ourselves or our journeys.</p>
 
   <p>That’s what this doodle was like. At every step I had to decide where to continue the line. I was stuck with where it had already gone. That was just done — it <em>was</em> at that moment. I had to make do with it.</p>
 </section>
@@ -332,7 +233,7 @@ section h3::before {
 <hr class="divider">
 
 <section>
-  <h2 style="margin-bottom: 0.5rem;">spiral, thicket, middle, bass-wiggle, flourish + stop</h2>
+  <h2 style="margin-bottom: 0.5rem;">Spiral, thicket, middle, bass-wiggle, flourish + stop</h2>
 
   <p style="margin-bottom: 0;">Looking at the drawing now, it falls into five phases. The line goes through each one in order.</p>
 
@@ -341,15 +242,15 @@ section h3::before {
       <path d="M 0.00 0.00 L 0.20 0.04 L 0.37 0.16 L 0.49 0.35 L 0.54 0.59 L 0.50 0.87 L 0.37 1.14 L 0.15 1.39 L -0.17 1.59 L -0.56 1.71 L -1.00 1.73 L -1.47 1.63 L -1.94 1.41 L -2.38 1.06 L -2.74 0.58 L -3.00 0.00 L -3.13 -0.67 L -3.11 -1.38 L -2.91 -2.12 L -2.54 -2.82 L -2.00 -3.46 L -1.30 -3.99 L -0.46 -4.38 L 0.48 -4.57 L 1.48 -4.57 L 2.50 -4.33 L 3.48 -3.86 L 4.37 -3.17 L 5.12 -2.28 L 5.67 -1.21 L 6.00 0.00 L 6.06 1.29 L 5.85 2.60 L 5.34 3.88 L 4.55 5.05 L 3.50 6.06 L 2.22 6.85 L 0.77 7.36 L -0.79 7.56 L -2.41 7.42 L -4.00 6.93 L -5.49 6.09 L -6.80 4.94 L -7.86 3.50 L -8.61 1.83 L -9.00 0.00 L -9.00 -1.91 L -8.59 -3.82 L -7.77 -5.64 L -6.56 -7.28 L -5.00 -8.66 L -3.15 -9.70 L -1.09 -10.34 L 1.11 -10.54 L 3.34 -10.27 L 5.50 -9.53 L 7.49 -8.32 L 9.22 -6.70 L 10.60 -4.72 L 11.54 -2.45 L 12.00 0.00 L 11.93 2.54 L 11.33 5.04 L 10.19 7.41 L 8.56 9.51 L 6.50 11.26 L 4.08 12.55 L 1.40 13.33 L -1.42 13.53 L -4.26 13.12 L -7.00 12.12 L -9.50 10.55 L -11.65 8.46 L -13.34 5.94 L -14.48 3.08 L -15.00 0.00 L -14.87 -3.16 L -14.07 -6.26 L -12.62 -9.17 L -10.57 -11.74 L -8.00 -13.86 L -5.01 -15.41 L -1.71 -16.31 L 1.74 -16.51 L 5.19 -15.98 L 8.50 -14.72 L 11.51 -12.78 L 14.08 -10.23 L 16.08 -7.16 L 17.41 -3.70 L 18.00 0.00" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <circle cx="80" cy="155" r="5.5" fill="none" stroke="#2a6cd8" stroke-width="2"/>
-    <text x="80" y="184" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">spiral</text>
-    <text x="80" y="210" text-anchor="middle" font-family="EB Garamond, serif" font-style="normal" font-size="15" fill="#5a5147">(beginning)</text>
+    <text x="80" y="184" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="15" fill="#1f1a14">Spiral</text>
+    <text x="80" y="210" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-style="normal" font-size="15" fill="#5a5147">(beginning)</text>
 
     <g transform="translate(220,110)">
       <path d="M -30 0 q 5 -15 10 0 q 5 15 10 -5 q 5 -10 10 5 q 5 12 10 -8 q 5 -8 10 5 q 5 8 10 -3" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
     </g>
     <circle cx="220" cy="155" r="5.5" fill="none" stroke="#e0432a" stroke-width="2"/>
-    <text x="220" y="184" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">thicket</text>
-    <text x="220" y="210" text-anchor="middle" font-family="EB Garamond, serif" font-style="normal" font-size="15" fill="#5a5147">(adolescence)</text>
+    <text x="220" y="184" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="15" fill="#1f1a14">Thicket</text>
+    <text x="220" y="210" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-style="normal" font-size="15" fill="#5a5147">(adolescence)</text>
 
     <g transform="translate(360,110)">
       <path d="M -30 -10 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
@@ -357,23 +258,23 @@ section h3::before {
       <path d="M -30 10 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
     </g>
     <circle cx="360" cy="155" r="5.5" fill="none" stroke="#7bc04a" stroke-width="2"/>
-    <text x="360" y="184" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">middle</text>
-    <text x="360" y="210" text-anchor="middle" font-family="EB Garamond, serif" font-style="normal" font-size="15" fill="#5a5147">(middle age)</text>
+    <text x="360" y="184" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="15" fill="#1f1a14">Middle</text>
+    <text x="360" y="210" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-style="normal" font-size="15" fill="#5a5147">(middle age)</text>
 
     <g transform="translate(500,110)">
       <path d="M -30 0 c 15 -15 25 15 60 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
     </g>
     <circle cx="500" cy="155" r="5.5" fill="none" stroke="#a653d9" stroke-width="2"/>
-    <text x="500" y="184" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">bass-wiggle</text>
-    <text x="500" y="210" text-anchor="middle" font-family="EB Garamond, serif" font-style="normal" font-size="15" fill="#5a5147">(old age)</text>
+    <text x="500" y="184" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="15" fill="#1f1a14">Bass-wiggle</text>
+    <text x="500" y="210" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-style="normal" font-size="15" fill="#5a5147">(old age)</text>
 
     <g transform="translate(620,110)">
       <path d="M -15 5 q 3 -10 6 0 q 3 8 6 -5 q 3 -3 6 4" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
       <circle cx="6" cy="6" r="2.5" fill="#1f1a14"/>
     </g>
     <circle cx="620" cy="155" r="5.5" fill="none" stroke="#d9a82a" stroke-width="2"/>
-    <text x="620" y="184" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#1f1a14">flourish + stop</text>
-    <text x="620" y="210" text-anchor="middle" font-family="EB Garamond, serif" font-style="normal" font-size="15" fill="#5a5147">(end)</text>
+    <text x="620" y="184" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="15" fill="#1f1a14">Flourish + stop</text>
+    <text x="620" y="210" text-anchor="middle" font-family="Brandon Grotesque, system-ui, sans-serif" font-style="normal" font-size="15" fill="#5a5147">(end)</text>
 
     <line x1="110" y1="115" x2="195" y2="115" stroke="#c9bfaf" stroke-width="0.8" stroke-dasharray="2 4"/>
     <line x1="250" y1="115" x2="325" y2="115" stroke="#c9bfaf" stroke-width="0.8" stroke-dasharray="2 4"/>
@@ -389,18 +290,18 @@ section h3::before {
 <section>
   <div class="chapter-opener">
     <div class="chapter-num-big">chapter i</div>
-    <h2 class="chapter-title">the beginning</h2>
+    <h2 class="chapter-title">The beginning</h2>
     <svg class="chapter-ornament" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <g transform="translate(49,27)">
         <path d="M 0.00 0.00 L 0.20 0.04 L 0.37 0.16 L 0.49 0.35 L 0.54 0.59 L 0.50 0.87 L 0.37 1.14 L 0.15 1.39 L -0.17 1.59 L -0.56 1.71 L -1.00 1.73 L -1.47 1.63 L -1.94 1.41 L -2.38 1.06 L -2.74 0.58 L -3.00 0.00 L -3.13 -0.67 L -3.11 -1.38 L -2.91 -2.12 L -2.54 -2.82 L -2.00 -3.46 L -1.30 -3.99 L -0.46 -4.38 L 0.48 -4.57 L 1.48 -4.57 L 2.50 -4.33 L 3.48 -3.86 L 4.37 -3.17 L 5.12 -2.28 L 5.67 -1.21 L 6.00 0.00 L 6.06 1.29 L 5.85 2.60 L 5.34 3.88 L 4.55 5.05 L 3.50 6.06 L 2.22 6.85 L 0.77 7.36 L -0.79 7.56 L -2.41 7.42 L -4.00 6.93 L -5.49 6.09 L -6.80 4.94 L -7.86 3.50 L -8.61 1.83 L -9.00 0.00 L -9.00 -1.91 L -8.59 -3.82 L -7.77 -5.64 L -6.56 -7.28 L -5.00 -8.66 L -3.15 -9.70 L -1.09 -10.34 L 1.11 -10.54 L 3.34 -10.27 L 5.50 -9.53 L 7.49 -8.32 L 9.22 -6.70 L 10.60 -4.72 L 11.54 -2.45 L 12.00 0.00 L 11.93 2.54 L 11.33 5.04 L 10.19 7.41 L 8.56 9.51 L 6.50 11.26 L 4.08 12.55 L 1.40 13.33 L -1.42 13.53 L -4.26 13.12 L -7.00 12.12 L -9.50 10.55 L -11.65 8.46 L -13.34 5.94 L -14.48 3.08 L -15.00 0.00 L -14.87 -3.16 L -14.07 -6.26 L -12.62 -9.17 L -10.57 -11.74 L -8.00 -13.86 L -5.01 -15.41 L -1.71 -16.31 L 1.74 -16.51 L 5.19 -15.98 L 8.50 -14.72 L 11.51 -12.78 L 14.08 -10.23 L 16.08 -7.16 L 17.41 -3.70 L 18.00 0.00" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
     </svg>
-    <div class="chapter-subtitle">spiral</div>
+    <div class="chapter-subtitle">Spiral</div>
   </div>
   <div class="chapter-bar">
     <span class="num">I</span>
-    <span class="name">the beginning</span>
-    <span class="sub">spiral</span>
+    <span class="name">The beginning</span>
+    <span class="sub">Spiral</span>
   </div>
 
   <p>The beginning is an outward spiral.</p>
@@ -411,18 +312,18 @@ section h3::before {
 <section>
   <div class="chapter-opener">
     <div class="chapter-num-big">chapter ii</div>
-    <h2 class="chapter-title">adolescence</h2>
+    <h2 class="chapter-title">Adolescence</h2>
     <svg class="chapter-ornament" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <g transform="translate(50,25)">
         <path d="M -30 0 q 5 -15 10 0 q 5 15 10 -5 q 5 -10 10 5 q 5 12 10 -8 q 5 -8 10 5 q 5 8 10 -3" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
       </g>
     </svg>
-    <div class="chapter-subtitle">thicket</div>
+    <div class="chapter-subtitle">Thicket</div>
   </div>
   <div class="chapter-bar">
     <span class="num">II</span>
-    <span class="name">adolescence</span>
-    <span class="sub">thicket</span>
+    <span class="name">Adolescence</span>
+    <span class="sub">Thicket</span>
   </div>
 
   <p>After the spiral, there’s a little intermediate period. Almost high-frequency. An intricate <em>finding yourself</em>. In the schema this is the <em>thicket</em>.</p>
@@ -437,7 +338,7 @@ section h3::before {
 <section>
   <div class="chapter-opener">
     <div class="chapter-num-big">chapter iii</div>
-    <h2 class="chapter-title">middle age</h2>
+    <h2 class="chapter-title">Middle age</h2>
     <svg class="chapter-ornament" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <g transform="translate(50,25)">
         <path d="M -30 -10 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
@@ -445,77 +346,77 @@ section h3::before {
         <path d="M -30 10 c 10 -8 20 -8 30 0 c 10 8 20 8 30 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
       </g>
     </svg>
-    <div class="chapter-subtitle">middle</div>
+    <div class="chapter-subtitle">Middle</div>
   </div>
   <div class="chapter-bar">
     <span class="num">III</span>
-    <span class="name">middle age</span>
-    <span class="sub">middle</span>
+    <span class="name">Middle age</span>
+    <span class="sub">Middle</span>
   </div>
 
   <p>The middle is so complicated. It’s hard to look at it and say anything that feels meaningful. I could say it looks like a face — but that’s like seeing shapes in clouds. That feels like imposing a reading versus listening to what’s actually in the drawing — understanding the complexity and the wiggles and fingers.</p>
 
   <p>What’s actually in the middle is a few moves I was making.</p>
 
-  <h3>doubling back</h3>
+  <h3>Doubling back</h3>
 
   <p>Near the edges of the page, or just at random, I’d double back. Once doubled back, I’d settle into a routine of re-tracing the contours of what came before — at a distance, in a new curve.</p>
 
   <p>I did this in two different ways.</p>
 
-  <h3>sympathy</h3>
+  <h3>Sympathy</h3>
 
   <p>The first way: following the wave-shape. Tracing a similar shape. The gap between the old line and the new one stays roughly constant.</p>
 
-  <h3>opposition</h3>
+  <h3>Opposition</h3>
 
   <p>The second way: diametrically opposed to the prior wave-shape. Riding in perfect opposition to it. When the prior curve is closer to me, I veer closer. When it’s veering away, I too am veering away. So the gap between us pinches and balloons.</p>
 
   <div class="diagram"><svg viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sympathy versus opposition diagram">
-    <text x="60" y="38" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#1f1a14">sympathy</text>
-    <text x="60" y="60" font-family="EB Garamond, serif" font-size="14" fill="#5a5147">the gap stays constant</text>
+    <text x="60" y="38" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="22" fill="#1f1a14">Sympathy</text>
+    <text x="60" y="60" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="14" fill="#5a5147">The gap stays constant</text>
 
     <path d="M 60.00 130.00 L 62.00 131.61 L 64.00 133.21 L 66.00 134.79 L 68.00 136.32 L 70.00 137.81 L 72.00 139.23 L 74.00 140.58 L 76.00 141.84 L 78.00 143.01 L 80.00 144.07 L 82.00 145.02 L 84.00 145.85 L 86.00 146.55 L 88.00 147.12 L 90.00 147.55 L 92.00 147.84 L 94.00 147.98 L 96.00 147.98 L 98.00 147.84 L 100.00 147.55 L 102.00 147.12 L 104.00 146.55 L 106.00 145.85 L 108.00 145.02 L 110.00 144.07 L 112.00 143.01 L 114.00 141.84 L 116.00 140.58 L 118.00 139.23 L 120.00 137.81 L 122.00 136.32 L 124.00 134.79 L 126.00 133.21 L 128.00 131.61 L 130.00 130.00 L 132.00 128.39 L 134.00 126.79 L 136.00 125.21 L 138.00 123.68 L 140.00 122.19 L 142.00 120.77 L 144.00 119.42 L 146.00 118.16 L 148.00 116.99 L 150.00 115.93 L 152.00 114.98 L 154.00 114.15 L 156.00 113.45 L 158.00 112.88 L 160.00 112.45 L 162.00 112.16 L 164.00 112.02 L 166.00 112.02 L 168.00 112.16 L 170.00 112.45 L 172.00 112.88 L 174.00 113.45 L 176.00 114.15 L 178.00 114.98 L 180.00 115.93 L 182.00 116.99 L 184.00 118.16 L 186.00 119.42 L 188.00 120.77 L 190.00 122.19 L 192.00 123.68 L 194.00 125.21 L 196.00 126.79 L 198.00 128.39 L 200.00 130.00 L 202.00 131.61 L 204.00 133.21 L 206.00 134.79 L 208.00 136.32 L 210.00 137.81 L 212.00 139.23 L 214.00 140.58 L 216.00 141.84 L 218.00 143.01 L 220.00 144.07 L 222.00 145.02 L 224.00 145.85 L 226.00 146.55 L 228.00 147.12 L 230.00 147.55 L 232.00 147.84 L 234.00 147.98 L 236.00 147.98 L 238.00 147.84 L 240.00 147.55 L 242.00 147.12 L 244.00 146.55 L 246.00 145.85 L 248.00 145.02 L 250.00 144.07 L 252.00 143.01 L 254.00 141.84 L 256.00 140.58 L 258.00 139.23 L 260.00 137.81 L 262.00 136.32 L 264.00 134.79 L 266.00 133.21 L 268.00 131.61 L 270.00 130.00 L 272.00 128.39 L 274.00 126.79 L 276.00 125.21 L 278.00 123.68 L 280.00 122.19 L 282.00 120.77 L 284.00 119.42 L 286.00 118.16 L 288.00 116.99 L 290.00 115.93 L 292.00 114.98 L 294.00 114.15 L 296.00 113.45 L 298.00 112.88 L 300.00 112.45 L 302.00 112.16 L 304.00 112.02 L 306.00 112.02 L 308.00 112.16 L 310.00 112.45 L 312.00 112.88 L 314.00 113.45 L 316.00 114.15 L 318.00 114.98 L 320.00 115.93 L 322.00 116.99 L 324.00 118.16 L 326.00 119.42 L 328.00 120.77 L 330.00 122.19 L 332.00 123.68 L 334.00 125.21 L 336.00 126.79 L 338.00 128.39 L 340.00 130.00 L 342.00 131.61 L 344.00 133.21 L 346.00 134.79 L 348.00 136.32 L 350.00 137.81 L 352.00 139.23 L 354.00 140.58 L 356.00 141.84 L 358.00 143.01 L 360.00 144.07 L 362.00 145.02 L 364.00 145.85 L 366.00 146.55 L 368.00 147.12 L 370.00 147.55 L 372.00 147.84 L 374.00 147.98 L 376.00 147.98 L 378.00 147.84 L 380.00 147.55 L 382.00 147.12 L 384.00 146.55 L 386.00 145.85 L 388.00 145.02 L 390.00 144.07 L 392.00 143.01 L 394.00 141.84 L 396.00 140.58 L 398.00 139.23 L 400.00 137.81 L 402.00 136.32 L 404.00 134.79 L 406.00 133.21 L 408.00 131.61 L 410.00 130.00 L 412.00 128.39 L 414.00 126.79 L 416.00 125.21 L 418.00 123.68 L 420.00 122.19 L 422.00 120.77 L 424.00 119.42 L 426.00 118.16 L 428.00 116.99 L 430.00 115.93 L 432.00 114.98 L 434.00 114.15 L 436.00 113.45 L 438.00 112.88 L 440.00 112.45 L 442.00 112.16 L 444.00 112.02 L 446.00 112.02 L 448.00 112.16 L 450.00 112.45 L 452.00 112.88 L 454.00 113.45 L 456.00 114.15 L 458.00 114.98 L 460.00 115.93 L 462.00 116.99 L 464.00 118.16 L 466.00 119.42 L 468.00 120.77 L 470.00 122.19 L 472.00 123.68 L 474.00 125.21 L 476.00 126.79 L 478.00 128.39 L 480.00 130.00 L 482.00 131.61 L 484.00 133.21 L 486.00 134.79 L 488.00 136.32 L 490.00 137.81 L 492.00 139.23 L 494.00 140.58 L 496.00 141.84 L 498.00 143.01 L 500.00 144.07 L 502.00 145.02 L 504.00 145.85 L 506.00 146.55 L 508.00 147.12 L 510.00 147.55 L 512.00 147.84 L 514.00 147.98 L 516.00 147.98 L 518.00 147.84 L 520.00 147.55 L 522.00 147.12 L 524.00 146.55 L 526.00 145.85 L 528.00 145.02 L 530.00 144.07 L 532.00 143.01 L 534.00 141.84 L 536.00 140.58 L 538.00 139.23 L 540.00 137.81 L 542.00 136.32 L 544.00 134.79 L 546.00 133.21 L 548.00 131.61 L 550.00 130.00 L 552.00 128.39 L 554.00 126.79 L 556.00 125.21 L 558.00 123.68 L 560.00 122.19 L 562.00 120.77 L 564.00 119.42 L 566.00 118.16 L 568.00 116.99 L 570.00 115.93 L 572.00 114.98 L 574.00 114.15 L 576.00 113.45 L 578.00 112.88 L 580.00 112.45 L 582.00 112.16 L 584.00 112.02 L 586.00 112.02 L 588.00 112.16 L 590.00 112.45 L 592.00 112.88 L 594.00 113.45 L 596.00 114.15 L 598.00 114.98 L 600.00 115.93 L 602.00 116.99 L 604.00 118.16 L 606.00 119.42 L 608.00 120.77 L 610.00 122.19 L 612.00 123.68 L 614.00 125.21 L 616.00 126.79 L 618.00 128.39 L 620.00 130.00 C 636.50 143.33 644.75 164.99 644.75 179.99" fill="none" stroke="#7d7670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M 644.75 179.99 C 644.75 194.99 636.50 203.33 620.00 190.00 L 618.00 188.39 L 616.00 186.79 L 614.00 185.21 L 612.00 183.68 L 610.00 182.19 L 608.00 180.77 L 606.00 179.42 L 604.00 178.16 L 602.00 176.99 L 600.00 175.93 L 598.00 174.98 L 596.00 174.15 L 594.00 173.45 L 592.00 172.88 L 590.00 172.45 L 588.00 172.16 L 586.00 172.02 L 584.00 172.02 L 582.00 172.16 L 580.00 172.45 L 578.00 172.88 L 576.00 173.45 L 574.00 174.15 L 572.00 174.98 L 570.00 175.93 L 568.00 176.99 L 566.00 178.16 L 564.00 179.42 L 562.00 180.77 L 560.00 182.19 L 558.00 183.68 L 556.00 185.21 L 554.00 186.79 L 552.00 188.39 L 550.00 190.00 L 548.00 191.61 L 546.00 193.21 L 544.00 194.79 L 542.00 196.32 L 540.00 197.81 L 538.00 199.23 L 536.00 200.58 L 534.00 201.84 L 532.00 203.01 L 530.00 204.07 L 528.00 205.02 L 526.00 205.85 L 524.00 206.55 L 522.00 207.12 L 520.00 207.55 L 518.00 207.84 L 516.00 207.98 L 514.00 207.98 L 512.00 207.84 L 510.00 207.55 L 508.00 207.12 L 506.00 206.55 L 504.00 205.85 L 502.00 205.02 L 500.00 204.07 L 498.00 203.01 L 496.00 201.84 L 494.00 200.58 L 492.00 199.23 L 490.00 197.81 L 488.00 196.32 L 486.00 194.79 L 484.00 193.21 L 482.00 191.61 L 480.00 190.00 L 478.00 188.39 L 476.00 186.79 L 474.00 185.21 L 472.00 183.68 L 470.00 182.19 L 468.00 180.77 L 466.00 179.42 L 464.00 178.16 L 462.00 176.99 L 460.00 175.93 L 458.00 174.98 L 456.00 174.15 L 454.00 173.45 L 452.00 172.88 L 450.00 172.45 L 448.00 172.16 L 446.00 172.02 L 444.00 172.02 L 442.00 172.16 L 440.00 172.45 L 438.00 172.88 L 436.00 173.45 L 434.00 174.15 L 432.00 174.98 L 430.00 175.93 L 428.00 176.99 L 426.00 178.16 L 424.00 179.42 L 422.00 180.77 L 420.00 182.19 L 418.00 183.68 L 416.00 185.21 L 414.00 186.79 L 412.00 188.39 L 410.00 190.00 L 408.00 191.61 L 406.00 193.21 L 404.00 194.79 L 402.00 196.32 L 400.00 197.81 L 398.00 199.23 L 396.00 200.58 L 394.00 201.84 L 392.00 203.01 L 390.00 204.07 L 388.00 205.02 L 386.00 205.85 L 384.00 206.55 L 382.00 207.12 L 380.00 207.55 L 378.00 207.84 L 376.00 207.98 L 374.00 207.98 L 372.00 207.84 L 370.00 207.55 L 368.00 207.12 L 366.00 206.55 L 364.00 205.85 L 362.00 205.02 L 360.00 204.07 L 358.00 203.01 L 356.00 201.84 L 354.00 200.58 L 352.00 199.23 L 350.00 197.81 L 348.00 196.32 L 346.00 194.79 L 344.00 193.21 L 342.00 191.61 L 340.00 190.00 L 338.00 188.39 L 336.00 186.79 L 334.00 185.21 L 332.00 183.68 L 330.00 182.19 L 328.00 180.77 L 326.00 179.42 L 324.00 178.16 L 322.00 176.99 L 320.00 175.93 L 318.00 174.98 L 316.00 174.15 L 314.00 173.45 L 312.00 172.88 L 310.00 172.45 L 308.00 172.16 L 306.00 172.02 L 304.00 172.02 L 302.00 172.16 L 300.00 172.45 L 298.00 172.88 L 296.00 173.45 L 294.00 174.15 L 292.00 174.98 L 290.00 175.93 L 288.00 176.99 L 286.00 178.16 L 284.00 179.42 L 282.00 180.77 L 280.00 182.19 L 278.00 183.68 L 276.00 185.21 L 274.00 186.79 L 272.00 188.39 L 270.00 190.00 L 268.00 191.61 L 266.00 193.21 L 264.00 194.79 L 262.00 196.32 L 260.00 197.81 L 258.00 199.23 L 256.00 200.58 L 254.00 201.84 L 252.00 203.01 L 250.00 204.07 L 248.00 205.02 L 246.00 205.85 L 244.00 206.55 L 242.00 207.12 L 240.00 207.55 L 238.00 207.84 L 236.00 207.98 L 234.00 207.98 L 232.00 207.84 L 230.00 207.55 L 228.00 207.12 L 226.00 206.55 L 224.00 205.85 L 222.00 205.02 L 220.00 204.07 L 218.00 203.01 L 216.00 201.84 L 214.00 200.58 L 212.00 199.23 L 210.00 197.81 L 208.00 196.32 L 206.00 194.79 L 204.00 193.21 L 202.00 191.61 L 200.00 190.00 L 198.00 188.39 L 196.00 186.79 L 194.00 185.21 L 192.00 183.68 L 190.00 182.19 L 188.00 180.77 L 186.00 179.42 L 184.00 178.16 L 182.00 176.99 L 180.00 175.93 L 178.00 174.98 L 176.00 174.15 L 174.00 173.45 L 172.00 172.88 L 170.00 172.45 L 168.00 172.16 L 166.00 172.02 L 164.00 172.02 L 162.00 172.16 L 160.00 172.45 L 158.00 172.88 L 156.00 173.45 L 154.00 174.15 L 152.00 174.98 L 150.00 175.93 L 148.00 176.99 L 146.00 178.16 L 144.00 179.42 L 142.00 180.77 L 140.00 182.19 L 138.00 183.68 L 136.00 185.21 L 134.00 186.79 L 132.00 188.39 L 130.00 190.00 L 128.00 191.61 L 126.00 193.21 L 124.00 194.79 L 122.00 196.32 L 120.00 197.81 L 118.00 199.23 L 116.00 200.58 L 114.00 201.84 L 112.00 203.01 L 110.00 204.07 L 108.00 205.02 L 106.00 205.85 L 104.00 206.55 L 102.00 207.12 L 100.00 207.55 L 98.00 207.84 L 96.00 207.98 L 94.00 207.98 L 92.00 207.84 L 90.00 207.55 L 88.00 207.12 L 86.00 206.55 L 84.00 205.85 L 82.00 205.02 L 80.00 204.07 L 78.00 203.01 L 76.00 201.84 L 74.00 200.58 L 72.00 199.23 L 70.00 197.81 L 68.00 196.32 L 66.00 194.79 L 64.00 193.21 L 62.00 191.61 L 60.00 190.00" fill="none" stroke="#b5751a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <text x="58" y="134" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#7d7670">prior</text>
-    <text x="58" y="194" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#b5751a">new</text>
+    <text x="58" y="134" text-anchor="end" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="13" fill="#7d7670">Prior</text>
+    <text x="58" y="194" text-anchor="end" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="13" fill="#b5751a">New</text>
 
-    <text x="60" y="278" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#1f1a14">opposition</text>
-    <text x="60" y="300" font-family="EB Garamond, serif" font-size="14" fill="#5a5147">the gap pinches and balloons</text>
+    <text x="60" y="278" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="22" fill="#1f1a14">Opposition</text>
+    <text x="60" y="300" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="14" fill="#5a5147">The gap pinches and balloons</text>
 
     <path d="M 60.00 350.00 L 62.00 351.71 L 64.00 353.41 L 66.00 355.08 L 68.00 356.70 L 70.00 358.26 L 72.00 359.75 L 74.00 361.14 L 76.00 362.44 L 78.00 363.62 L 80.00 364.68 L 82.00 365.61 L 84.00 366.39 L 86.00 367.02 L 88.00 367.50 L 90.00 367.82 L 92.00 367.98 L 94.00 367.98 L 96.00 367.81 L 98.00 367.48 L 100.00 366.99 L 102.00 366.35 L 104.00 365.55 L 106.00 364.62 L 108.00 363.56 L 110.00 362.37 L 112.00 361.06 L 114.00 359.66 L 116.00 358.17 L 118.00 356.61 L 120.00 354.98 L 122.00 353.31 L 124.00 351.61 L 126.00 349.90 L 128.00 348.19 L 130.00 346.49 L 132.00 344.82 L 134.00 343.21 L 136.00 341.65 L 138.00 340.17 L 140.00 338.78 L 142.00 337.49 L 144.00 336.31 L 146.00 335.26 L 148.00 334.34 L 150.00 333.57 L 152.00 332.94 L 154.00 332.47 L 156.00 332.16 L 158.00 332.01 L 160.00 332.03 L 162.00 332.21 L 164.00 332.55 L 166.00 333.04 L 168.00 333.70 L 170.00 334.50 L 172.00 335.44 L 174.00 336.51 L 176.00 337.71 L 178.00 339.02 L 180.00 340.42 L 182.00 341.92 L 184.00 343.49 L 186.00 345.11 L 188.00 346.79 L 190.00 348.49 L 192.00 350.20 L 194.00 351.91 L 196.00 353.61 L 198.00 355.27 L 200.00 356.89 L 202.00 358.44 L 204.00 359.92 L 206.00 361.30 L 208.00 362.58 L 210.00 363.75 L 212.00 364.80 L 214.00 365.70 L 216.00 366.47 L 218.00 367.09 L 220.00 367.55 L 222.00 367.85 L 224.00 367.99 L 226.00 367.97 L 228.00 367.78 L 230.00 367.43 L 232.00 366.92 L 234.00 366.26 L 236.00 365.45 L 238.00 364.50 L 240.00 363.42 L 242.00 362.22 L 244.00 360.90 L 246.00 359.49 L 248.00 357.99 L 250.00 356.42 L 252.00 354.79 L 254.00 353.11 L 256.00 351.41 L 258.00 349.70 L 260.00 347.98 L 262.00 346.29 L 264.00 344.63 L 266.00 343.02 L 268.00 341.47 L 270.00 340.00 L 272.00 338.62 L 274.00 337.34 L 276.00 336.18 L 278.00 335.15 L 280.00 334.25 L 282.00 333.49 L 284.00 332.88 L 286.00 332.43 L 288.00 332.14 L 290.00 332.01 L 292.00 332.04 L 294.00 332.24 L 296.00 332.60 L 298.00 333.11 L 300.00 333.78 L 302.00 334.60 L 304.00 335.56 L 306.00 336.65 L 308.00 337.86 L 310.00 339.18 L 312.00 340.60 L 314.00 342.10 L 316.00 343.68 L 318.00 345.31 L 320.00 346.98 L 322.00 348.69 L 324.00 350.40 L 326.00 352.12 L 328.00 353.81 L 330.00 355.47 L 332.00 357.07 L 334.00 358.62 L 336.00 360.08 L 338.00 361.46 L 340.00 362.73 L 342.00 363.88 L 344.00 364.91 L 346.00 365.80 L 348.00 366.55 L 350.00 367.15 L 352.00 367.59 L 354.00 367.88 L 356.00 368.00 L 358.00 367.95 L 360.00 367.75 L 362.00 367.38 L 364.00 366.85 L 366.00 366.17 L 368.00 365.35 L 370.00 364.38 L 372.00 363.29 L 374.00 362.07 L 376.00 360.74 L 378.00 359.32 L 380.00 357.81 L 382.00 356.23 L 384.00 354.59 L 386.00 352.92 L 388.00 351.21 L 390.00 349.50 L 392.00 347.78 L 394.00 346.09 L 396.00 344.44 L 398.00 342.83 L 400.00 341.29 L 402.00 339.83 L 404.00 338.46 L 406.00 337.20 L 408.00 336.05 L 410.00 335.03 L 412.00 334.15 L 414.00 333.41 L 416.00 332.82 L 418.00 332.39 L 420.00 332.11 L 422.00 332.00 L 424.00 332.06 L 426.00 332.27 L 428.00 332.65 L 430.00 333.18 L 432.00 333.87 L 434.00 334.71 L 436.00 335.68 L 438.00 336.78 L 440.00 338.01 L 442.00 339.34 L 444.00 340.77 L 446.00 342.28 L 448.00 343.86 L 450.00 345.50 L 452.00 347.18 L 454.00 348.89 L 456.00 350.61 L 458.00 352.32 L 460.00 354.01 L 462.00 355.66 L 464.00 357.26 L 466.00 358.80 L 468.00 360.25 L 470.00 361.61 L 472.00 362.87 L 474.00 364.01 L 476.00 365.02 L 478.00 365.90 L 480.00 366.63 L 482.00 367.21 L 484.00 367.63 L 486.00 367.90 L 488.00 368.00 L 490.00 367.94 L 492.00 367.71 L 494.00 367.32 L 496.00 366.78 L 498.00 366.08 L 500.00 365.24 L 502.00 364.26 L 504.00 363.15 L 506.00 361.92 L 508.00 360.58 L 510.00 359.15 L 512.00 357.63 L 514.00 356.04 L 516.00 354.40 L 518.00 352.72 L 520.00 351.01 L 522.00 349.29 L 524.00 347.58 L 526.00 345.90 L 528.00 344.25 L 530.00 342.65 L 532.00 341.12 L 534.00 339.67 L 536.00 338.31 L 538.00 337.06 L 540.00 335.93 L 542.00 334.92 L 544.00 334.05 L 546.00 333.33 L 548.00 332.76 L 550.00 332.35 L 552.00 332.09 L 554.00 332.00 L 556.00 332.07 L 558.00 332.31 L 560.00 332.70 L 562.00 333.26 L 564.00 333.96 L 566.00 334.81 L 568.00 335.80 L 570.00 336.92 L 572.00 338.16 L 574.00 339.50 L 576.00 340.94 L 578.00 342.46 L 580.00 344.05 L 582.00 345.70 L 584.00 347.38 L 586.00 349.09 L 588.00 350.81 L 590.00 352.52 L 592.00 354.20 L 594.00 355.85 L 596.00 357.44 L 598.00 358.97 L 600.00 360.42 L 602.00 361.77 L 604.00 363.01 L 606.00 364.14 L 608.00 365.13 L 610.00 365.99 L 612.00 366.71 L 614.00 367.27 L 616.00 367.67 L 618.00 367.92 L 620.00 368.00 C 642.00 368.00 653.00 379.00 653.00 390.00" fill="none" stroke="#7d7670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M 653.00 390.00 C 653.00 401.00 642.00 412.00 620.00 412.00 L 618.00 412.08 L 616.00 412.33 L 614.00 412.73 L 612.00 413.29 L 610.00 414.01 L 608.00 414.87 L 606.00 415.86 L 604.00 416.99 L 602.00 418.23 L 600.00 419.58 L 598.00 421.03 L 596.00 422.56 L 594.00 424.15 L 592.00 425.80 L 590.00 427.48 L 588.00 429.19 L 586.00 430.91 L 584.00 432.62 L 582.00 434.30 L 580.00 435.95 L 578.00 437.54 L 576.00 439.06 L 574.00 440.50 L 572.00 441.84 L 570.00 443.08 L 568.00 444.20 L 566.00 445.19 L 564.00 446.04 L 562.00 446.74 L 560.00 447.30 L 558.00 447.69 L 556.00 447.93 L 554.00 448.00 L 552.00 447.91 L 550.00 447.65 L 548.00 447.24 L 546.00 446.67 L 544.00 445.95 L 542.00 445.08 L 540.00 444.07 L 538.00 442.94 L 536.00 441.69 L 534.00 440.33 L 532.00 438.88 L 530.00 437.35 L 528.00 435.75 L 526.00 434.10 L 524.00 432.42 L 522.00 430.71 L 520.00 428.99 L 518.00 427.28 L 516.00 425.60 L 514.00 423.96 L 512.00 422.37 L 510.00 420.85 L 508.00 419.42 L 506.00 418.08 L 504.00 416.85 L 502.00 415.74 L 500.00 414.76 L 498.00 413.92 L 496.00 413.22 L 494.00 412.68 L 492.00 412.29 L 490.00 412.06 L 488.00 412.00 L 486.00 412.10 L 484.00 412.37 L 482.00 412.79 L 480.00 413.37 L 478.00 414.10 L 476.00 414.98 L 474.00 415.99 L 472.00 417.13 L 470.00 418.39 L 468.00 419.75 L 466.00 421.20 L 464.00 422.74 L 462.00 424.34 L 460.00 425.99 L 458.00 427.68 L 456.00 429.39 L 454.00 431.11 L 452.00 432.82 L 450.00 434.50 L 448.00 436.14 L 446.00 437.72 L 444.00 439.23 L 442.00 440.66 L 440.00 441.99 L 438.00 443.22 L 436.00 444.32 L 434.00 445.29 L 432.00 446.13 L 430.00 446.82 L 428.00 447.35 L 426.00 447.73 L 424.00 447.94 L 422.00 448.00 L 420.00 447.89 L 418.00 447.61 L 416.00 447.18 L 414.00 446.59 L 412.00 445.85 L 410.00 444.97 L 408.00 443.95 L 406.00 442.80 L 404.00 441.54 L 402.00 440.17 L 400.00 438.71 L 398.00 437.17 L 396.00 435.56 L 394.00 433.91 L 392.00 432.22 L 390.00 430.50 L 388.00 428.79 L 386.00 427.08 L 384.00 425.41 L 382.00 423.77 L 380.00 422.19 L 378.00 420.68 L 376.00 419.26 L 374.00 417.93 L 372.00 416.71 L 370.00 415.62 L 368.00 414.65 L 366.00 413.83 L 364.00 413.15 L 362.00 412.62 L 360.00 412.25 L 358.00 412.05 L 356.00 412.00 L 354.00 412.12 L 352.00 412.41 L 350.00 412.85 L 348.00 413.45 L 346.00 414.20 L 344.00 415.09 L 342.00 416.12 L 340.00 417.27 L 338.00 418.54 L 336.00 419.92 L 334.00 421.38 L 332.00 422.93 L 330.00 424.53 L 328.00 426.19 L 326.00 427.88 L 324.00 429.60 L 322.00 431.31 L 320.00 433.02 L 318.00 434.69 L 316.00 436.32 L 314.00 437.90 L 312.00 439.40 L 310.00 440.82 L 308.00 442.14 L 306.00 443.35 L 304.00 444.44 L 302.00 445.40 L 300.00 446.22 L 298.00 446.89 L 296.00 447.40 L 294.00 447.76 L 292.00 447.96 L 290.00 447.99 L 288.00 447.86 L 286.00 447.57 L 284.00 447.12 L 282.00 446.51 L 280.00 445.75 L 278.00 444.85 L 276.00 443.82 L 274.00 442.66 L 272.00 441.38 L 270.00 440.00 L 268.00 438.53 L 266.00 436.98 L 264.00 435.37 L 262.00 433.71 L 260.00 432.02 L 258.00 430.30 L 256.00 428.59 L 254.00 426.89 L 252.00 425.21 L 250.00 423.58 L 248.00 422.01 L 246.00 420.51 L 244.00 419.10 L 242.00 417.78 L 240.00 416.58 L 238.00 415.50 L 236.00 414.55 L 234.00 413.74 L 232.00 413.08 L 230.00 412.57 L 228.00 412.22 L 226.00 412.03 L 224.00 412.01 L 222.00 412.15 L 220.00 412.45 L 218.00 412.91 L 216.00 413.53 L 214.00 414.30 L 212.00 415.20 L 210.00 416.25 L 208.00 417.42 L 206.00 418.70 L 204.00 420.08 L 202.00 421.56 L 200.00 423.11 L 198.00 424.73 L 196.00 426.39 L 194.00 428.09 L 192.00 429.80 L 190.00 431.51 L 188.00 433.21 L 186.00 434.89 L 184.00 436.51 L 182.00 438.08 L 180.00 439.58 L 178.00 440.98 L 176.00 442.29 L 174.00 443.49 L 172.00 444.56 L 170.00 445.50 L 168.00 446.30 L 166.00 446.96 L 164.00 447.45 L 162.00 447.79 L 160.00 447.97 L 158.00 447.99 L 156.00 447.84 L 154.00 447.53 L 152.00 447.06 L 150.00 446.43 L 148.00 445.66 L 146.00 444.74 L 144.00 443.69 L 142.00 442.51 L 140.00 441.22 L 138.00 439.83 L 136.00 438.35 L 134.00 436.79 L 132.00 435.18 L 130.00 433.51 L 128.00 431.81 L 126.00 430.10 L 124.00 428.39 L 122.00 426.69 L 120.00 425.02 L 118.00 423.39 L 116.00 421.83 L 114.00 420.34 L 112.00 418.94 L 110.00 417.63 L 108.00 416.44 L 106.00 415.38 L 104.00 414.45 L 102.00 413.65 L 100.00 413.01 L 98.00 412.52 L 96.00 412.19 L 94.00 412.02 L 92.00 412.02 L 90.00 412.18 L 88.00 412.50 L 86.00 412.98 L 84.00 413.61 L 82.00 414.39 L 80.00 415.32 L 78.00 416.38 L 76.00 417.56 L 74.00 418.86 L 72.00 420.25 L 70.00 421.74 L 68.00 423.30 L 66.00 424.92 L 64.00 426.59 L 62.00 428.29 L 60.00 430.00" fill="none" stroke="#b5751a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <text x="58" y="354" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#7d7670">prior</text>
-    <text x="58" y="434" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#b5751a">new</text>
+    <text x="58" y="354" text-anchor="end" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="13" fill="#7d7670">Prior</text>
+    <text x="58" y="434" text-anchor="end" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="13" fill="#b5751a">New</text>
   </svg></div>
 
   <p>As I say that, it reminds me sometimes how I am with prior versions of myself — and prior versions of life handed to me through stories or relationships.</p>
 
-  <h3>smooth echo of wiggles</h3>
+  <h3>Smooth echo of wiggles</h3>
 
   <p>Sometimes my new path is a <em>smooth echo</em> of what came before. There might be fine-scale features I ignore when I make my sympathy curve. The sympathy curve may be sympathetic only to the overall contour, or envelope, or local convex hull. Not trying to fit all the high-frequency structure — just the beats.</p>
 
   <div class="diagram"><svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Smooth echo of wiggles">
-<text x="60" y="38" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#1f1a14">smooth echo of wiggles</text>
+<text x="60" y="38" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="22" fill="#1f1a14">Smooth echo of wiggles</text>
 
 <path d="M 60 120.0 L 62 123.5 L 64 126.7 L 66 129.2 L 68 130.9 L 70 131.6 L 72 131.4 L 74 130.5 L 76 129.0 L 78 127.4 L 80 125.9 L 82 124.8 L 84 124.6 L 86 125.1 L 88 126.7 L 90 129.0 L 92 131.9 L 94 135.2 L 96 138.4 L 98 141.3 L 100 143.5 L 102 144.8 L 104 145.1 L 106 144.5 L 108 143.1 L 110 141.1 L 112 138.9 L 114 136.9 L 116 135.3 L 118 134.5 L 120 134.5 L 122 135.4 L 124 137.1 L 126 139.4 L 128 142.0 L 130 144.5 L 132 146.7 L 134 148.2 L 136 148.8 L 138 148.4 L 140 147.0 L 142 144.9 L 144 142.2 L 146 139.3 L 148 136.5 L 150 134.2 L 152 132.6 L 154 131.9 L 156 132.1 L 158 133.1 L 160 134.7 L 162 136.6 L 164 138.4 L 166 139.9 L 168 140.7 L 170 140.7 L 172 139.7 L 174 137.7 L 176 135.0 L 178 131.7 L 180 128.3 L 182 125.0 L 184 122.1 L 186 120.1 L 188 118.9 L 190 118.6 L 192 119.2 L 194 120.4 L 196 122.0 L 198 123.5 L 200 124.7 L 202 125.3 L 204 125.0 L 206 123.8 L 208 121.7 L 210 118.8 L 212 115.4 L 214 111.9 L 216 108.6 L 218 105.8 L 220 103.7 L 222 102.6 L 224 102.5 L 226 103.2 L 228 104.5 L 230 106.3 L 232 108.1 L 234 109.5 L 236 110.4 L 238 110.4 L 240 109.5 L 242 107.8 L 244 105.3 L 246 102.4 L 248 99.3 L 250 96.5 L 252 94.2 L 254 92.7 L 256 92.1 L 258 92.5 L 260 93.8 L 262 95.8 L 264 98.2 L 266 100.6 L 268 102.7 L 270 104.3 L 272 105.0 L 274 104.8 L 276 103.8 L 278 102.0 L 280 99.8 L 282 97.5 L 284 95.4 L 286 93.8 L 288 93.0 L 290 93.2 L 292 94.4 L 294 96.4 L 296 99.1 L 298 102.2 L 300 105.3 L 302 108.1 L 304 110.4 L 306 111.8 L 308 112.3 L 310 111.9 L 312 110.8 L 314 109.2 L 316 107.4 L 318 105.9 L 320 104.9 L 322 104.6 L 324 105.3 L 326 106.9 L 328 109.4 L 330 112.6 L 332 116.1 L 334 119.6 L 336 122.7 L 338 125.3 L 340 127.0 L 342 127.7 L 344 127.6 L 346 126.6 L 348 125.2 L 350 123.6 L 352 122.2 L 354 121.2 L 356 121.0 L 358 121.7 L 360 123.3 L 362 125.7 L 364 128.8 L 366 132.1 L 368 135.5 L 370 138.4 L 372 140.7 L 374 142.2 L 376 142.6 L 378 142.2 L 380 140.9 L 382 139.1 L 384 137.1 L 386 135.2 L 388 133.8 L 390 133.1 L 392 133.3 L 394 134.3 L 396 136.2 L 398 138.7 L 400 141.4 L 402 144.2 L 404 146.5 L 406 148.2 L 408 148.9 L 410 148.7 L 412 147.6 L 414 145.6 L 416 143.1 L 418 140.4 L 420 137.8 L 422 135.6 L 424 134.2 L 426 133.6 L 428 134.0 L 430 135.1 L 432 136.8 L 434 138.9 L 436 140.9 L 438 142.5 L 440 143.5 L 442 143.5 L 444 142.6 L 446 140.8 L 448 138.2 L 450 135.0 L 452 131.6 L 454 128.4 L 456 125.7 L 458 123.7 L 460 122.6 L 462 122.4 L 464 123.0 L 466 124.3 L 468 125.9 L 470 127.4 L 472 128.6 L 474 129.2 L 476 128.9 L 478 127.7 L 480 125.6 L 482 122.7 L 484 119.3 L 486 115.8 L 488 112.4 L 490 109.5 L 492 107.4 L 494 106.2 L 496 106.0 L 498 106.6 L 500 107.9 L 502 109.6 L 504 111.2 L 506 112.6 L 508 113.3 L 510 113.3 L 512 112.3 L 514 110.4 L 516 107.8 L 518 104.7 L 520 101.5 L 522 98.5 L 524 96.1 L 526 94.4 L 528 93.7 L 530 93.9 L 532 95.1 L 534 96.9 L 536 99.1 L 538 101.3 L 540 103.3 L 542 104.6 L 544 105.2 L 546 104.8 L 548 103.6 L 550 101.7 L 552 99.3 L 554 96.8 L 556 94.5 L 558 92.8 L 560 91.8 L 562 91.8 L 564 92.8 L 566 94.7 L 568 97.2 L 570 100.2 L 572 103.2 L 574 105.8 L 576 107.9 L 578 109.2 L 580 109.5 L 582 109.0 L 584 107.8 L 586 106.1 L 588 104.2 L 590 102.6 L 592 101.5 L 594 101.1 L 596 101.7 L 598 103.3 L 600 105.7 L 602 108.8 L 604 112.3 L 606 115.7 L 608 118.9 L 610 121.4 L 612 123.0 L 614 123.8 L 616 123.6 L 618 122.7 L 620 121.3" fill="none" stroke="#7d7670" stroke-width="1.5" stroke-linecap="round"/>
 <path d="M 60 190.0 L 62 191.0 L 64 192.0 L 66 193.0 L 68 193.9 L 70 194.9 L 72 195.9 L 74 196.8 L 76 197.7 L 78 198.6 L 80 199.5 L 82 200.4 L 84 201.3 L 86 202.1 L 88 202.9 L 90 203.7 L 92 204.5 L 94 205.2 L 96 205.9 L 98 206.6 L 100 207.2 L 102 207.8 L 104 208.4 L 106 208.9 L 108 209.4 L 110 209.8 L 112 210.2 L 114 210.6 L 116 210.9 L 118 211.2 L 120 211.4 L 122 211.6 L 124 211.8 L 126 211.9 L 128 212.0 L 130 212.0 L 132 212.0 L 134 211.9 L 136 211.8 L 138 211.6 L 140 211.4 L 142 211.2 L 144 210.9 L 146 210.6 L 148 210.2 L 150 209.8 L 152 209.4 L 154 208.9 L 156 208.4 L 158 207.8 L 160 207.2 L 162 206.6 L 164 205.9 L 166 205.2 L 168 204.5 L 170 203.7 L 172 202.9 L 174 202.1 L 176 201.3 L 178 200.4 L 180 199.5 L 182 198.6 L 184 197.7 L 186 196.8 L 188 195.9 L 190 194.9 L 192 193.9 L 194 193.0 L 196 192.0 L 198 191.0 L 200 190.0 L 202 189.0 L 204 188.0 L 206 187.0 L 208 186.1 L 210 185.1 L 212 184.1 L 214 183.2 L 216 182.3 L 218 181.4 L 220 180.5 L 222 179.6 L 224 178.7 L 226 177.9 L 228 177.1 L 230 176.3 L 232 175.5 L 234 174.8 L 236 174.1 L 238 173.4 L 240 172.8 L 242 172.2 L 244 171.6 L 246 171.1 L 248 170.6 L 250 170.2 L 252 169.8 L 254 169.4 L 256 169.1 L 258 168.8 L 260 168.6 L 262 168.4 L 264 168.2 L 266 168.1 L 268 168.0 L 270 168.0 L 272 168.0 L 274 168.1 L 276 168.2 L 278 168.4 L 280 168.6 L 282 168.8 L 284 169.1 L 286 169.4 L 288 169.8 L 290 170.2 L 292 170.6 L 294 171.1 L 296 171.6 L 298 172.2 L 300 172.8 L 302 173.4 L 304 174.1 L 306 174.8 L 308 175.5 L 310 176.3 L 312 177.1 L 314 177.9 L 316 178.7 L 318 179.6 L 320 180.5 L 322 181.4 L 324 182.3 L 326 183.2 L 328 184.1 L 330 185.1 L 332 186.1 L 334 187.0 L 336 188.0 L 338 189.0 L 340 190.0 L 342 191.0 L 344 192.0 L 346 193.0 L 348 193.9 L 350 194.9 L 352 195.9 L 354 196.8 L 356 197.7 L 358 198.6 L 360 199.5 L 362 200.4 L 364 201.3 L 366 202.1 L 368 202.9 L 370 203.7 L 372 204.5 L 374 205.2 L 376 205.9 L 378 206.6 L 380 207.2 L 382 207.8 L 384 208.4 L 386 208.9 L 388 209.4 L 390 209.8 L 392 210.2 L 394 210.6 L 396 210.9 L 398 211.2 L 400 211.4 L 402 211.6 L 404 211.8 L 406 211.9 L 408 212.0 L 410 212.0 L 412 212.0 L 414 211.9 L 416 211.8 L 418 211.6 L 420 211.4 L 422 211.2 L 424 210.9 L 426 210.6 L 428 210.2 L 430 209.8 L 432 209.4 L 434 208.9 L 436 208.4 L 438 207.8 L 440 207.2 L 442 206.6 L 444 205.9 L 446 205.2 L 448 204.5 L 450 203.7 L 452 202.9 L 454 202.1 L 456 201.3 L 458 200.4 L 460 199.5 L 462 198.6 L 464 197.7 L 466 196.8 L 468 195.9 L 470 194.9 L 472 193.9 L 474 193.0 L 476 192.0 L 478 191.0 L 480 190.0 L 482 189.0 L 484 188.0 L 486 187.0 L 488 186.1 L 490 185.1 L 492 184.1 L 494 183.2 L 496 182.3 L 498 181.4 L 500 180.5 L 502 179.6 L 504 178.7 L 506 177.9 L 508 177.1 L 510 176.3 L 512 175.5 L 514 174.8 L 516 174.1 L 518 173.4 L 520 172.8 L 522 172.2 L 524 171.6 L 526 171.1 L 528 170.6 L 530 170.2 L 532 169.8 L 534 169.4 L 536 169.1 L 538 168.8 L 540 168.6 L 542 168.4 L 544 168.2 L 546 168.1 L 548 168.0 L 550 168.0 L 552 168.0 L 554 168.1 L 556 168.2 L 558 168.4 L 560 168.6 L 562 168.8 L 564 169.1 L 566 169.4 L 568 169.8 L 570 170.2 L 572 170.6 L 574 171.1 L 576 171.6 L 578 172.2 L 580 172.8 L 582 173.4 L 584 174.1 L 586 174.8 L 588 175.5 L 590 176.3 L 592 177.1 L 594 177.9 L 596 178.7 L 598 179.6 L 600 180.5 L 602 181.4 L 604 182.3 L 606 183.2 L 608 184.1 L 610 185.1 L 612 186.1 L 614 187.0 L 616 188.0 L 618 189.0 L 620 190.0" fill="none" stroke="#b5751a" stroke-width="2" stroke-linecap="round"/>
 
-<text x="58" y="124" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#7d7670">prior</text>
-<text x="58" y="194" text-anchor="end" font-family="EB Garamond, serif" font-size="13" fill="#b5751a">new</text>
+<text x="58" y="124" text-anchor="end" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="13" fill="#7d7670">Prior</text>
+<text x="58" y="194" text-anchor="end" font-family="Brandon Grotesque, system-ui, sans-serif" font-size="13" fill="#b5751a">New</text>
 </svg></div>
 
   <p>I see this happening in three places in my drawing. Maybe four — one of them could also be considered just a new finger or protrusion, so it’s a bit ambiguous.</p>
 
-  <h3>smooth echo of fingers</h3>
+  <h3>Smooth echo of fingers</h3>
 
   <p>Fingers are what happens when you go take a winding route and double back, your u-turn making the tip of a finger. Smoothing fingers might be different from smoothing wiggles. It’s when a later path comes near a bunch of finger tips but just wiggles a bit to reflect the tips and loses the full shape of the fingers. A finger isn’t fine-scale texture like the wiggles — it’s an entire excursion the line made and came back from.</p>
 
   <p>I marked two areas of finger-smoothing in orange.</p>
 
-  <h3>vacuum filling</h3>
+  <h3>Vacuum filling</h3>
 
   <p>There’s a different phenomenon that looks similar to smooth echo but isn’t. The smooth echo is kind of like a reduction in complexity as you go along the path. But sometimes more complexity shows up later, filling a space left empty by earlier journeys.</p>
 
@@ -538,21 +439,21 @@ section h3::before {
 <section>
   <div class="chapter-opener">
     <div class="chapter-num-big">chapter iv</div>
-    <h2 class="chapter-title">old age</h2>
+    <h2 class="chapter-title">Old age</h2>
     <svg class="chapter-ornament" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <g transform="translate(50,25)">
         <path d="M -30 0 c 15 -15 25 15 60 0" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round"/>
       </g>
     </svg>
-    <div class="chapter-subtitle">bass-wiggle</div>
+    <div class="chapter-subtitle">Bass-wiggle</div>
   </div>
   <div class="chapter-bar">
     <span class="num">IV</span>
-    <span class="name">old age</span>
-    <span class="sub">bass-wiggle</span>
+    <span class="name">Old age</span>
+    <span class="sub">Bass-wiggle</span>
   </div>
 
-  <h3>graceful giving up</h3>
+  <h3>Graceful giving up</h3>
 
   <p>The big squiggles toward the end are an attempt to gracefully give up after I lost patience.</p>
 
@@ -564,22 +465,22 @@ section h3::before {
 <section>
   <div class="chapter-opener">
     <div class="chapter-num-big">chapter v</div>
-    <h2 class="chapter-title">the end</h2>
+    <h2 class="chapter-title">The end</h2>
     <svg class="chapter-ornament" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <g transform="translate(45,22) scale(1.7)">
         <path d="M -15 5 q 3 -10 6 0 q 3 8 6 -5 q 3 -3 6 4" fill="none" stroke="#1f1a14" stroke-width="1.3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
         <circle cx="6" cy="6" r="2.5" fill="#1f1a14"/>
       </g>
     </svg>
-    <div class="chapter-subtitle">flourish + stop</div>
+    <div class="chapter-subtitle">Flourish + stop</div>
   </div>
   <div class="chapter-bar">
     <span class="num">V</span>
-    <span class="name">the end</span>
-    <span class="sub">flourish + stop</span>
+    <span class="name">The end</span>
+    <span class="sub">Flourish + stop</span>
   </div>
 
-  <h3>one last flourish</h3>
+  <h3>One last flourish</h3>
 
   <p>Then at the very end I had one last flourish of high-frequency notes. A flash of ambition. I imagined I could continue forever, making smaller and smaller high-frequency wiggles in the remaining space.</p>
 
